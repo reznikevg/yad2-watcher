@@ -1,4 +1,3 @@
-
 services:
   - type: worker
     name: yad2-watcher
@@ -6,3 +5,4 @@ services:
     plan: free
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python yad2_watcher.py"
+    autoDeploy: true
