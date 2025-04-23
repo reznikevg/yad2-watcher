@@ -1,0 +1,8 @@
+
+services:
+  - type: worker
+    name: yad2-watcher
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python yad2_watcher.py"
